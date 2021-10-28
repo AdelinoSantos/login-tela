@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            /* background: url('./imagem.png'); */
+            background: linear-gradient(-105deg, #90697b, #141646 40%, #2f2a60);
+            background-size: 100% 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+            color: silver;
+        }
+
+        h1 {
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            font-size: 50px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            padding: 15px 0;
+            width: 100%;
+            margin: 0;
+
+        }
+
+        .caixalogin {
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 300px;
+            padding: 40px;
+            border-radius: 50px 10px 50px 10px;
+            box-shadow: 0 20px 20px;
+            position: relative;
+        }
+
+        .caixalogin h2 {
+            color: #fff;
+            text-align: center;
+            margin: 20px 0 30px;
+            font-family: arial;
+        }
+
+        .caixalogin .campo input {
+            width: 100%;
+            padding: 10px;
+            font-size: 17px;
+            background: transparent;
+            color: #fff;
+            letter-spacing: 5px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        .caixalogin .campo {
+            position: relative;
+
+        }
+
+        .caixalogin .campo label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            font-family: arial;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .caixalogin .campo input:focus~label,
+        .caixalogin .campo input:valid~label {
+            top: -20px;
+            left: 0;
+            color: violet;
+            font-size: 12px;
+        }
+
+        #checkbox2 {
+            color: #fff;
+            font-family: arial;
+            font-size: 12px;
+        }
+
+        .caixalogin button {
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            color: #fff;
+            background: linear-gradient(to right, #3c269c, #eb7a80);
+            padding: 10px 20px;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #cadastro {
+            font-weight: bold;
+            color: #fff;
+            font-family: arial;
+            text-align: center;
+            cursor: pointer;
+        }
+        .img-user{
+            background-color: purple;
+            width: 60px;
+            height: 60px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -5%;
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img-user img {
+            width: 90%;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Login Área do Advogado</h1>
+    <div class="caixalogin">
+        <div class="img-user">
+            <img src="./user.png">
+        </div>
+        <h2>Logar no Sistema</h2>
+        <form>
+            <div class='campo'>
+                <input type="text" required="">
+                <label>Usuário</label>
+            </div>
+            <div class='campo'>
+                <input type="password" required="">
+                <label>Senha</label>
+            </div>
+            <input type="checkbox" checked="checked" class="checkbox">
+            <label class="checkbox2">Lembrar-me</label><br><br>
+            <button>Entrar</button>
+            <p id="cadastro">Efetuar Cadastro</p>
+        </form>
+    </div>
+    <div></div>
+</body>
+
+</html>
